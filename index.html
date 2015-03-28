@@ -1,0 +1,46 @@
+<html>
+<head>
+
+    <!-- bower:css -->
+    <!-- endbower -->
+</head>
+<body ng-app="app" ng-init="data=1111">
+
+
+
+
+
+    <div ng-controller="HelloCtrl">
+        <!-- <h1>{{data.name}}</h1> -->
+
+        <form action="" name="myForm" ng-submit="submit()">
+            <input type="text" name="name" ng-model="formData.name" required>
+            <span ng-show="myForm.name.$error.required"> please fill the name</span>
+        </form>
+
+
+        <div ng-repeat="post in data">
+            <h4>{{post.title}}</h4>
+            <p>{{post.body}}</p>
+        </div>
+    </div>
+
+
+
+
+    <p>batarang - plugin for chrome </p>
+
+
+
+
+
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/controllers/HelloCtrl.js"></script>
+    <!-- endbower -->
+</body>
+
+
+</html>

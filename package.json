@@ -1,0 +1,20 @@
+{
+  "name": "nodeApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebower": "npm install",
+    "bower": "bower install",
+    "wire": "wiredep -s index.html",
+    "http": "http-server",
+    "build": "npm run bower && npm run wire && npm run http"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower" : "*",
+    "wiredep": "*",
+    "http-server": "*"
+  }
+}
